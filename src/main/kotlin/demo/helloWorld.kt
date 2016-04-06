@@ -1,10 +1,13 @@
 package demo
 
 fun getGreeting(): String {
-	val wordOne = "Hello"
-	val wordTwo = "world"
+	val text = """
+		This is a block of text.
+		I can type new lines at will.
+		The power, it is beyond imagining.
+	"""
 
-    return "$wordOne, $wordTwo"
+    return text
 }
 
 fun main(args: Array<String>) {
