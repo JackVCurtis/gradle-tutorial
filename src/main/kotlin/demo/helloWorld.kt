@@ -1,18 +1,12 @@
 package demo
 
 fun getGreeting(): String {
-    val words = mutableListOf<String>()
-    words.add("Hello,")
-    words.add("world!")
+	val wordOne = "Hello"
+	val wordTwo = "world"
 
-    return words.joinToString(separator = " ")
-}
-
-fun getArray(): Array<String> {
-	val asc = Array(6, { (it + 1).toString() })
-	return asc
+    return "$wordOne, $wordTwo"
 }
 
 fun main(args: Array<String>) {
-    println(getArray())
+    println(getGreeting())
 }
